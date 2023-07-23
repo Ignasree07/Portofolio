@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Me</title>
+    <style>
+        /* Reset default margins and paddings */
+        body, h2, form, input, textarea, button {
+            margin: 0;
+            padding: 0;
+            border: none;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Set background color and font styles */
+        body {
+            background-color: #6169d7;
+            color: #333;
+        }
+
+        /* Center the content vertically */
+        #contact {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Container for the contact form */
+        .container {
+            max-width: 600px;
+            padding: 30px;
+            background-color: #6ca3d6;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Heading style */
+        h2 {
+            font-size: 36px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* Form field style */
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        /* Textarea style */
+        textarea {
+            height: 150px;
+            resize: vertical;
+        }
+
+        /* Submit button style */
+        button[type="submit"] {
+            background-color: #007bff; /* Replace with your desired submit button color */
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Optional: Add hover effect to the submit button */
+        button[type="submit"]:hover {
+            background-color: #0056b3; /* Replace with your desired hover color */
+        }
+
+        /* Optional: Add a small divider at the bottom of the section */
+        hr {
+            border: none;
+            height: 1px;
+            background-color: #ccc;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <hr>
+            <form action="submit_form.php" method="post"> <!-- Replace "submit_form.php" with the path to your form processing script -->
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="text" name="email" placeholder="Your Email" required>
+                <input type="text" name="subject" placeholder="Subject" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
